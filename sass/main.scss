@@ -1,0 +1,47 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 10px;
+
+  body {
+    box-sizing: border-box;
+
+    .container {
+      background-image: linear-gradient(to right, rgba(black, .3), rgba(black, .3)), url("../img/image.jpg");
+      background-size: cover;
+      background-position: top;
+      height: 100vh;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .acrylic {
+        // Acrylic style
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        background-color: rgba(white, .05);
+
+        &:hover {
+          background-color: rgba(white, .1);
+
+        }
+      }
+
+      .form {
+        height: 50rem;
+        width: 40rem;
+        border-radius: 1rem;
+        color: white;
+        transition: all 500ms ease;
+      }
+    }
+
+  }
+}
